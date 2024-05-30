@@ -1,0 +1,21 @@
+image:
+  repository: mariadb
+  tag: latest
+  pullPolicy: IfNotPresent
+
+mysqlRootPassword: rootpassword
+mysqlUser: wiki
+mysqlPassword: dbpassword
+mysqlDatabase: wikidatabase
+
+service:
+  type: ClusterIP
+  port: 3306
+
+resources: {}
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
